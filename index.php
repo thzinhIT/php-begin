@@ -1,3 +1,10 @@
+<form action="index.php" method="get">
+    <input type="text" name="dulieu">
+    <input type="submit">
+</form>
+
+
+
 <?php  
 // đây là để in ra màn hình
   echo"thành vinh <br> <h1>Thành Vinh</h1>";
@@ -67,4 +74,21 @@ for($i=0;$i<count($mang);$i++)
  
  if(isset($vi)) echo"1"."<br>";
  else echo"0"."<br>";
+
+
+
+
+//   phương thức get và post 
+
+ echo $_REQUEST["dulieu"];
+
+
+
+
+//   gộp code từ file xuly.php 
+
+ require "xuly.php";
+
+// require_once cái này là nó chỉ hiển thị đúng 1 lần . có chữ once nghĩa là đã gộp r thì ko làm lại nx
+ require_once "xuly.php";
 ?>
